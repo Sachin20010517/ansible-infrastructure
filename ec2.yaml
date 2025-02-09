@@ -31,7 +31,7 @@
     region: ap-south-1
     security_group: ec2-security-group
     tag_name:
-      Name: Aj-ec2   
+      Name: two-tier-flask-ec2   
 
   tasks:
     - name: Create a security group
@@ -74,10 +74,7 @@
         region: "{{ region }}"
         key_name: "{{ keypair }}"
         count: "{{ count }}"
-<<<<<<< HEAD:ec2.yml
-=======
         tags: "{{ tag_name }}"
->>>>>>> 8a4f7adb77293a7d086f98dfa3d01770078bbc46:ec2.yaml
         user_data: |
           #!/bin/bash
           sudo apt update -y
