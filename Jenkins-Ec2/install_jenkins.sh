@@ -10,4 +10,4 @@ mkdir Ansible && cd Ansible
 pwd
 git clone https://github.com/Sachin20010517/ansible-infrastructure.git
 cd ansible-infrastructure
-ansible-playbook -i localhost Jenkins.yml
+ansible-playbook -i localhost DevSecOps.yml
